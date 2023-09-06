@@ -1,0 +1,1077 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".SamplePlanActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorGray">
+
+        <LinearLayout
+            android:id="@+id/title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_s"
+            android:layout_marginRight="@dimen/margin_s"
+            android:layout_marginTop="@dimen/margin_l"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/form_layout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginEnd="@dimen/margin_s"
+                android:layout_marginRight="@dimen/margin_s"
+                app:srcCompat="@drawable/logo_small" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="84dp"
+                android:gravity="center_vertical"
+                android:text="LABORATORIO DE AGUAS  PLAN DE MUESTREO"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_title"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/form_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_m"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title_layout">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="Código asignado:"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/edit_text_codigo_plan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:backgroundTint="@color/colorRed"
+                    android:textColor="@color/black">
+
+                </EditText>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:text="Fecha"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/edit_text_fecha_plan"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin_s"
+                        android:layout_weight="2"
+                        android:focusable="false"
+                        android:clickable="true"
+                        android:maxLines="1"
+                        android:backgroundTint="@color/colorRed"
+                        android:textColor="@color/black">
+
+                    </EditText>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.5"
+                        android:text="No."
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/edit_text_numero_plan"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.5"
+                        android:backgroundTint="@color/colorRed"
+                        android:textColor="@color/black">
+
+                    </EditText>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/black"
+                android:gravity="center"
+                android:text="DATOS DEL CLIENTE"
+                android:layout_marginBottom="@dimen/margin_s"
+                android:layout_marginTop="@dimen/margin_s"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.5"
+                    android:text="Cliente:"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/edit_text_cliente_plan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.5"
+                    android:backgroundTint="@color/colorRed"
+                    android:textColor="@color/black">
+
+                </EditText>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.5"
+                    android:text="Dirección:"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/edit_text_direccion_plan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.5"
+                    android:backgroundTint="@color/colorRed"
+                    android:textColor="@color/black">
+
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.5"
+                    android:text="Contacto:"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/edit_text_contacto_plan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.5"
+                    android:backgroundTint="@color/colorRed"
+                    android:textColor="@color/black">
+
+                </EditText>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.5"
+                    android:text="Actividad Productiva:"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/edit_text_actividad_plan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.5"
+                    android:backgroundTint="@color/colorRed"
+                    android:textColor="@color/black">
+
+                </EditText>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.7"
+                    android:text="Usos y Abastecimiento de agua:"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/edit_text_usos_plan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.3"
+                    android:backgroundTint="@color/colorRed"
+                    android:textColor="@color/black">
+
+                </EditText>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.5"
+                    android:text="Jornada de Trabajo:"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/edit_text_jornada_plan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.5"
+                    android:backgroundTint="@color/colorRed"
+                    android:textColor="@color/black">
+
+                </EditText>
+
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/black"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/margin_s"
+                android:layout_marginTop="@dimen/margin_s"
+                android:text="DATOS DEL SITIO DE MUESTREO"
+                android:textColor="@color/white" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/margin_s"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.7"
+                    android:text="No. Puntos de Muestreo:"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/edit_text_puntos_plan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.3"
+                    android:backgroundTint="@color/colorRed"
+                    android:textColor="@color/black">
+
+                </EditText>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.7"
+                    android:text="Ubicación Punto Muestreo 1"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/edit_text_ubicacion_plan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.3"
+                    android:backgroundTint="@color/colorRed"
+                    android:textColor="@color/black">
+
+                </EditText>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/margin_s"
+                android:weightSum="3">
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.8"
+                    android:text="Tipo de Descarga/método de aforo:"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/edit_text_descarga_plan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.2"
+                    android:backgroundTint="@color/colorRed"
+                    android:textColor="@color/black">
+
+                </EditText>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.8"
+                    android:text="Ubicación Punto Muestreo 2:"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/edit_text_ubicacion2_plan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.2"
+                    android:backgroundTint="@color/colorRed"
+                    android:textColor="@color/black">
+
+                </EditText>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/margin_s"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.8"
+                    android:text="Tipo de Descarga/método de aforo:"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/edit_text_descarga2_plan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.2"
+                    android:backgroundTint="@color/colorRed"
+                    android:textColor="@color/black">
+
+                </EditText>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/margin_s"
+                android:layout_marginTop="@dimen/margin_s"
+                android:text="Requerimientos de Seguridad (Apoyo de entes de control externo y/ó cliente, iluminación, vigilancia, etc)"
+                android:textColor="@color/black"
+                />
+
+            <EditText
+                android:id="@+id/edit_text_requerimientos_plan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorRed"
+                android:textColor="@color/black">
+
+            </EditText>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/black"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/margin_s"
+                android:layout_marginTop="@dimen/margin_s"
+                android:text="DATOS DE MUESTRA"
+                android:textColor="@color/white" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.5"
+                    android:text="Matriz de Prueba:"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/edit_text_matriz_plan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.5"
+                    android:backgroundTint="@color/colorRed"
+                    android:textColor="@color/black">
+
+                </EditText>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.5"
+                    android:text="Tipo de Muestra:"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/edit_text_tipo_muestra_plan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.5"
+                    android:backgroundTint="@color/colorRed"
+                    android:textColor="@color/black">
+
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.5"
+                    android:text="Frecuencia de Muestreo:"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/edit_text_frecuencia_plan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.5"
+                    android:backgroundTint="@color/colorRed"
+                    android:textColor="@color/black">
+
+                </EditText>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.5"
+                    android:text="Parámetros a analizar:"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/edit_text_parametros_plan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.5"
+                    android:backgroundTint="@color/colorRed"
+                    android:textColor="@color/black">
+
+                </EditText>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.7"
+                    android:text="Lista de Materiales y Equipos:"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/edit_text_materiales_plan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.3"
+                    android:backgroundTint="@color/colorRed"
+                    android:textColor="@color/black">
+
+                </EditText>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.5"
+                    android:text="Técnicas de Preservación:"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/edit_text_tecnicas_plan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.5"
+                    android:backgroundTint="@color/colorRed"
+                    android:textColor="@color/black">
+
+                </EditText>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/black"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/margin_s"
+                android:layout_marginTop="@dimen/margin_s"
+                android:text="DATOS PERSONAL INVOLUCRADO EN EL PROCESO DE TOMA DE MUESTRA "
+                android:textColor="@color/white" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.5"
+                    android:text="Personal Técnico:"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/edit_text_personal_plan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.5"
+                    android:backgroundTint="@color/colorRed"
+                    android:textColor="@color/black">
+
+                </EditText>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.7"
+                    android:text="Personal Administrativo:"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/edit_text_administrativo_plan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.3"
+                    android:backgroundTint="@color/colorRed"
+                    android:textColor="@color/black">
+
+                </EditText>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.7"
+                    android:text="Personal de toma de muestras:"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/edit_text_personal_toma_plan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.3"
+                    android:backgroundTint="@color/colorRed"
+                    android:textColor="@color/black">
+
+                </EditText>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/black"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/margin_s"
+                android:layout_marginTop="@dimen/margin_s"
+                android:text="PROGRAMACIÓN DE TOMA DE MUESTRAS"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.5"
+                    android:text="Fecha probable:"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/edit_text_fecha_probable_plan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.5"
+                    android:focusable="false"
+                    android:clickable="true"
+                    android:maxLines="1"
+                    android:backgroundTint="@color/colorRed"
+                    android:textColor="@color/black">
+
+                </EditText>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.5"
+                    android:text="Hora de inicio:"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/edit_text_hora_inicio_plan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.5"
+                    android:backgroundTint="@color/colorRed"
+                    android:textColor="@color/black">
+
+                </EditText>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/black"
+                android:gravity="center"
+                android:text="CONSTANCIA TOMA DE MUESTRAS"
+                android:layout_marginBottom="@dimen/margin_s"
+                android:layout_marginTop="@dimen/margin_s"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.5"
+                    android:text="Fecha de ejecución:"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/edit_text_fecha_ejecucion_plan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.5"
+                    android:focusable="false"
+                    android:clickable="true"
+                    android:maxLines="1"
+                    android:backgroundTint="@color/colorRed"
+                    android:textColor="@color/black">
+
+                </EditText>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.5"
+                    android:text="Representante cliente:"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/edit_text_representante_plan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.5"
+                    android:backgroundTint="@color/colorRed"
+                    android:textColor="@color/black">
+
+                </EditText>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.5"
+                    android:text="Cargo"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/edit_text_cargo_plan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.5"
+                    android:backgroundTint="@color/colorRed"
+                    android:textColor="@color/black">
+
+                </EditText>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/Plan_Firma1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_s"
+                    android:layout_marginRight="@dimen/margin_s"
+                    android:layout_marginBottom="@dimen/margin_s"
+                    android:backgroundTint="@color/colorRed"
+                    android:padding="@dimen/padding_button"
+                    android:text="Firma del representante"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.5"
+                    android:text="Responsable de toma de muestras:"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/edit_text_responsable_toma_plan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.5"
+                    android:backgroundTint="@color/colorRed"
+                    android:textColor="@color/black">
+
+                </EditText>
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/black"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/margin_s"
+                android:layout_marginTop="@dimen/margin_s"
+                android:text="OBSERVACIONES Y/O DESVIACIONES"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/edit_text_observaciones_plan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:backgroundTint="@color/colorRed"
+
+                android:textColor="@color/black">
+
+            </EditText>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.5"
+                    android:text="Realizado por::"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/edit_text_realizado_por_plan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.5"
+                    android:backgroundTint="@color/colorRed"
+                    android:textColor="@color/black">
+
+                </EditText>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.5"
+                    android:text="Revisado por:"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/edit_text_revisado_por_plan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.5"
+                    android:backgroundTint="@color/colorRed"
+                    android:textColor="@color/black">
+
+                </EditText>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/button_save_plan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="99dp"
+                android:layout_marginLeft="99dp"
+                android:layout_marginBottom="@dimen/margin_s"
+                android:layout_marginTop="@dimen/margin_s"
+                android:backgroundTint="@color/black"
+                android:padding="@dimen/padding_button"
+                android:text="Guardar"
+                android:textColor="@color/white"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

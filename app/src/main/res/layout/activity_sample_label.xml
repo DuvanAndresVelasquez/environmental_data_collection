@@ -1,0 +1,902 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".SampleLabelActivity" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorGray">
+        <LinearLayout
+            android:id="@+id/title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="112dp"
+            android:layout_marginLeft="@dimen/margin_s"
+            android:layout_marginTop="@dimen/margin_l"
+            android:layout_marginRight="@dimen/margin_s"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/form_layout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed">
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginEnd="@dimen/margin_s"
+                android:layout_marginRight="@dimen/margin_s"
+                app:srcCompat="@drawable/logo_small" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="LABORATORIO DE AGUAS ETIQUETA DE MUESTREO"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_title"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/form_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_m"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title_layout">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:text="Fecha de toma:"
+                        android:textColor="@color/black" />
+                    <EditText
+                        android:id="@+id/edit_text_Fecha_Etiqueta"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin_s"
+                        android:layout_weight="2"
+                        android:focusable="false"
+                        android:clickable="true"
+                        android:maxLines="1"
+                        android:backgroundTint="@color/colorRed"
+                        android:textColor="@color/black"
+                        android:inputType="date">
+                    </EditText>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:text="Orden de Servicio  No.:"
+                        android:textColor="@color/black" />
+                    <EditText
+                        android:id="@+id/edit_text_orden_Etiqueta"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:backgroundTint="@color/colorRed"
+                        android:textColor="@color/black"
+                        android:inputType="number">
+                    </EditText>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2"
+                    android:text="Responsable de la toma:"
+                    android:textColor="@color/black" />
+                <RadioGroup
+                    android:layout_width="126dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+                    <Spinner
+                        android:id="@+id/spinner_responsanle_Etiqueta"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:entries="@array/lista4"
+                        android:minHeight="48dp"
+                        android:spinnerMode="dialog"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.5"
+                    android:text="Nombre quien tomo la muestra:"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/edit_text_Nombre_muestra_Etiqueta"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.5"
+                    android:backgroundTint="@color/colorRed"
+                    android:textColor="@color/black">
+                </EditText>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/black"
+                android:gravity="center"
+                android:text="ETIQUETA DE MUESTREO"
+                android:layout_marginBottom="@dimen/margin_s"
+                android:layout_marginTop="@dimen/margin_s"
+                android:textColor="@color/white" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:text="Hora de toma"
+                        android:textColor="@color/black" />
+                    <EditText
+                        android:id="@+id/edit_text_hora_etiqueta"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:backgroundTint="@color/colorRed"
+                        android:textColor="@color/black"
+                        >
+                    </EditText>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/black"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/margin_s"
+                android:layout_marginTop="@dimen/margin_s"
+                android:text="TIPO DE AGUA"
+                android:textColor="@color/white" />
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3">
+                    <Spinner
+                        android:id="@+id/spinner_tipo_etiqueta"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:entries="@array/lista7"
+                        android:minHeight="48dp"
+                        android:spinnerMode="dialog"/>
+                </LinearLayout>
+            </RadioGroup>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:text="Cuál?:"
+                        android:textColor="@color/black" />
+                    <EditText
+                        android:id="@+id/edit_text_cual_tipo_Etiqueta"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:backgroundTint="@color/colorRed"
+                        android:textColor="@color/black">
+                    </EditText>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/black"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/margin_s"
+                android:layout_marginTop="@dimen/margin_s"
+                android:text="ORIGEN"
+                android:textColor="@color/white" />
+            <RadioGroup
+                android:id="@+id/radioGroup2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+                    <Spinner
+                        android:id="@+id/spinner_origen_Etiqueta"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:entries="@array/lista8"
+                        android:minHeight="48dp"
+                        android:spinnerMode="dialog"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:text="Cuál?:"
+                            android:textColor="@color/black" />
+                        <EditText
+                            android:id="@+id/edit_text_cual_origen_Etiqueta"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:backgroundTint="@color/colorRed"
+                            android:textColor="@color/black">
+                        </EditText>
+                    </LinearLayout>
+                </LinearLayout>
+            </RadioGroup>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/black"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/margin_s"
+                android:layout_marginTop="@dimen/margin_s"
+                android:text="TRATAMIENTO"
+                android:textColor="@color/white" />
+            <RadioGroup
+                android:id="@+id/radioGroup3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+                    <Spinner
+                        android:id="@+id/spinner_tratamiento_etiqueta"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:entries="@array/lista9"
+                        android:minHeight="48dp"
+                        android:spinnerMode="dialog"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:text="Cuál?:"
+                            android:textColor="@color/black" />
+                        <EditText
+                            android:id="@+id/edit_text_cual_tratamiento_Etiqueta"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:backgroundTint="@color/colorRed"
+                            android:textColor="@color/black">
+                        </EditText>
+                    </LinearLayout>
+                </LinearLayout>
+            </RadioGroup>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/black"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/margin_s"
+                android:layout_marginTop="@dimen/margin_s"
+                android:text="TIPO DE TOMA DE MUESTRA"
+                android:textColor="@color/white" />
+            <RadioGroup
+                android:id="@+id/radioGroup4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+                    <Spinner
+                        android:id="@+id/spinner_tipo_toma_etiqueta"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:entries="@array/lista10"
+                        android:minHeight="48dp"
+                        android:spinnerMode="dialog"/>
+                </LinearLayout>
+            </RadioGroup>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="3">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="Periodo de composición"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/edit_text_periodo_Etiqueta"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:backgroundTint="@color/colorRed"
+                    android:textColor="@color/black">
+                </EditText>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/black"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/margin_s"
+                android:layout_marginTop="@dimen/margin_s"
+                android:text="PARÁMETROS MEDIDOS IN SITU"
+                android:textColor="@color/white" />
+
+
+            <RadioGroup
+                android:id="@+id/radioGroup5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3">
+                    <Spinner
+                        android:id="@+id/spinner_parametros_etiqueta"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:entries="@array/lista11"
+                        android:minHeight="48dp"
+                        android:spinnerMode="dialog"/>
+
+                </LinearLayout>
+            </RadioGroup>
+            <EditText
+                android:id="@+id/edit_text_parametros_Etiqueta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorRed"
+                android:textColor="@color/black"></EditText>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="3">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="Cuál?"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/edit_text_cual_parametros_Etiqueta"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:backgroundTint="@color/colorRed"
+                    android:textColor="@color/black">
+                </EditText>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/black"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/margin_s"
+                android:layout_marginTop="@dimen/margin_s"
+                android:text="PRESERVACIÓN DE MUESTRA"
+                android:textColor="@color/white" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:weightSum="4">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:text="Tipo"
+                        android:textColor="@color/black" />
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="vertical">
+                        <Spinner
+                            android:id="@+id/spinner_tipo_preservacion"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:entries="@array/lista12"
+                            android:minHeight="48dp"
+                            android:spinnerMode="dialog"/>
+                        <Spinner
+                            android:id="@+id/spinner_tipo_preservacion_"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:entries="@array/lista12"
+                            android:minHeight="48dp"
+                            android:spinnerMode="dialog"/>
+                        <Spinner
+                            android:id="@+id/spinner_tipo_preservacion__"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:entries="@array/lista12"
+                            android:minHeight="48dp"
+                            android:spinnerMode="dialog"/>
+                    </RadioGroup>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:text="Verificación de campo"
+                        android:textColor="@color/black" />
+                    <EditText
+                        android:id="@+id/edit_text_verificacion_Etiqueta1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorRed"
+                        android:textColor="@color/black">
+                    </EditText>
+                    <EditText
+                        android:id="@+id/edit_text_verificacion_Etiqueta2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorRed"
+                        android:textColor="@color/black">
+                    </EditText>
+                    <EditText
+                        android:id="@+id/edit_text_verificacion_Etiqueta3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorRed"
+                        android:textColor="@color/black">
+                    </EditText>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/black"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/margin_s"
+                android:layout_marginTop="@dimen/margin_s"
+                android:text="DATOS DE LA MUESTRA"
+                android:textColor="@color/white" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.5"
+                    android:text="Municipio:"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/edit_text_municipio_Etiqueta"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.5"
+                    android:backgroundTint="@color/colorRed"
+                    android:textColor="@color/black">
+                </EditText>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.5"
+                    android:text="Sitio de Toma:"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/edit_text_sitio_Etiqueta"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.5"
+                    android:backgroundTint="@color/colorRed"
+                    android:textColor="@color/black">
+                </EditText>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.5"
+                    android:text="Dirección"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/edit_text_direccion_Etiqueta"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.5"
+                    android:backgroundTint="@color/colorRed"
+                    android:textColor="@color/black"
+                    android:inputType="textPostalAddress">
+
+                </EditText>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/spinner_ubicacion_etiqueta"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:entries="@array/lista13"
+                        android:minHeight="48dp"
+                        android:spinnerMode="dialog"/>
+                </RadioGroup>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                    <EditText
+                        android:id="@+id/edit_text_ubicacion_Etiqueta"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:backgroundTint="@color/colorRed"
+                        android:textColor="@color/black">
+
+                    </EditText>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="@dimen/margin_s"
+                android:layout_marginTop="@dimen/margin_s"
+                android:layout_weight="1"
+                android:text="Tipo de Análisis"
+                android:textColor="@color/black" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+
+                <Spinner
+                    android:id="@+id/spinner_tipo_analisis_etiqueta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:entries="@array/lista14"
+                    android:minHeight="48dp"
+                    android:spinnerMode="dialog"/>
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="Código asignado"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/edit_text_codigo_Etiqueta"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:backgroundTint="@color/colorRed"
+                    android:textColor="@color/black">
+
+                </EditText>
+
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/black"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/margin_s"
+                android:layout_marginTop="@dimen/margin_s"
+                android:text="Observaciones"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/edit_text_observaciones_Etiqueta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorRed"
+
+                android:textColor="@color/black"></EditText>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/black"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/margin_s"
+                android:layout_marginTop="@dimen/margin_s"
+                android:text="Se realizó transferencia de muestras?"
+                android:textColor="@color/white" />
+
+            <Spinner
+                android:id="@+id/spinner_realizo_etiqueta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:entries="@array/lista15"
+                android:minHeight="48dp"
+                android:spinnerMode="dialog"/>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.5"
+                    android:text="Responsable de toma de muestra"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/edit_text_responsable1_Etiqueta"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:backgroundTint="@color/colorRed"
+                    android:textColor="@color/black">
+
+                </EditText>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.5"
+                    android:text="Responsable de entrega de muestras"
+                    android:textColor="@color/black" />
+
+
+                <EditText
+                    android:id="@+id/edit_text_responsable_Etiqueta"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:backgroundTint="@color/colorRed"
+                    android:textColor="@color/black">
+
+                </EditText>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.5"
+                    android:text="Recibido Laboratorio de Aguas"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/edit_text_recibido_Etiqueta"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:backgroundTint="@color/colorRed"
+                    android:textColor="@color/black">
+
+                </EditText>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/btn_save_etiqueta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="99dp"
+                android:layout_marginLeft="99dp"
+                android:layout_marginBottom="@dimen/margin_s"
+                android:layout_marginTop="@dimen/margin_s"
+                android:backgroundTint="@color/black"
+                android:padding="@dimen/padding_button"
+                android:text="Guardar"
+                android:textColor="@color/white"
+                />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</ScrollView>
+

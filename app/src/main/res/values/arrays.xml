@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="lista1" >
+        <item>  </item>
+        <item>P</item>
+        <item>A</item>
+        <item>V</item>
+        <item>G</item>
+        <item>B</item>
+        <item>C</item>
+    </string-array>
+
+    <string-array name="lista2" >
+        <item>  </item>
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+    </string-array>
+
+    <string-array name="lista3" >
+        <item>  </item>
+        <item>Puntual</item>
+        <item>Compuesta</item>
+        <item>Integrada</item>
+    </string-array>
+
+    <string-array name="lista4" >
+        <item>  </item>
+        <item>Laboratorio</item>
+        <item>Cliente</item>
+    </string-array>
+
+    <string-array name="lista5" >
+        <item>  </item>
+        <item>Si</item>
+        <item>No</item>
+    </string-array>
+
+    <string-array name="lista6" >
+        <item>  </item>
+        <item>Laboratorio</item>
+        <item>Cliente</item>
+    </string-array>
+
+    <string-array name="lista7" >
+        <item>  </item>
+        <item>Cruda</item>
+        <item>Residual</item>
+        <item>Potable</item>
+        <item>Desconocida</item>
+        <item>Otro</item>
+    </string-array>
+
+    <string-array name="lista8" >
+        <item>  </item>
+        <item>Superficial</item>
+        <item>Subterránea</item>
+        <item>Nacimiento</item>
+        <item>Piscina</item>
+        <item>Proceso(Envasada)</item>
+        <item>Vertimiento doméstico</item>
+        <item>Vertimiento no doméstico</item>
+        <item>Infiltración</item>
+        <item>Desconocido</item>
+        <item>Otro</item>
+    </string-array>
+
+    <string-array name="lista9" >
+        <item>  </item>
+        <item>PTAP</item>
+        <item>PTAR</item>
+        <item>Cloración</item>
+        <item>Desarenador)</item>
+        <item>Biológico aerobio</item>
+        <item>Biológico anaerobio</item>
+        <item>Filtración</item>
+        <item>Trampa Grasa</item>
+        <item>N/A</item>
+        <item>Otro</item>
+    </string-array>
+
+    <string-array name="lista10" >
+        <item>  </item>
+        <item>Simple</item>
+        <item>Compuesta</item>
+        <item>Integrada</item>
+        <item>Simple y compuesta</item>
+    </string-array>
+
+    <string-array name="lista11" >
+        <item>  </item>
+        <item>Cloro (mg Cl2/L)</item>
+        <item>pH (Und. pH)</item>
+        <item>Otro</item>
+    </string-array>
+
+    <string-array name="lista12" >
+        <item>  </item>
+        <item>Refrigeración</item>
+        <item>Ácido pH \u003c 2</item>
+        <item>NaOH pH \u003e 9</item>
+    </string-array>
+
+    <string-array name="lista13" >
+        <item>  </item>
+        <item>GPS</item>
+        <item>Coordenadas</item>
+    </string-array>
+
+    <string-array name="lista14" >
+        <item>  </item>
+        <item>Fisicoquímico</item>
+        <item>Bact.</item>
+        <item>Fisicoquímico-Bact.</item>
+    </string-array>
+
+    <string-array name="lista15" >
+        <item>  </item>
+        <item>Si</item>
+        <item>No</item>
+        <item>N.A.</item>
+    </string-array>
+
+    <string-array name="lista16" >
+        <item>  </item>
+        <item>Si</item>
+        <item>No</item>
+    </string-array>
+
+    <string-array name="lista17" >
+        <item>  </item>
+        <item>Agua destilada</item>
+        <item>Balde</item>
+        <item>Barretón</item>
+        <item>Baterias AA</item>
+        <item>Baterias AAA</item>
+        <item>Bolas de icopor</item>
+        <item>Bolsa para basura</item>
+        <item>Bolsa zip-lock</item>
+        <item>Botella ámbar 1000 mL</item>
+        <item>Botella ámbar 250 mL</item>
+        <item>Botella ámbar 500 mL</item>
+        <item>Botella ámbar 100 mL</item>
+        <item>Botella winkler</item>
+        <item>Botiquín de primeros auxilios</item>
+        <item>Calculadora</item>
+        <item>Caja de herramientas</item>
+        <item>Cámara</item>
+        <item>Carpa</item>
+        <item>Cinta ancha</item>
+        <item>Cinta de Enmascarar</item>
+        <item>Cinta para señalización de área</item>
+        <item>Conos Imhoff</item>
+        <item>Conos para señalización de área</item>
+        <item>Cronómetro</item>
+        <item>Embudos plásticos</item>
+        <item>Equipo para medición de Caudal</item>
+        <item>Equipo para medición de Oxígeno </item>
+        <item>Equipo para medición de pH</item>
+        <item>Esfero</item>
+        <item>Escalera</item>
+        <item>Flexómetro</item>
+        <item>Frasco lavador</item>
+        <item>Frascos en PP 1000 mL</item>
+        <item>Frascos en PP 2000 mL</item>
+        <item>Frascos en PP 500 mL</item>
+        <item>Frascos en PP 100 mL</item>
+        <item>Frascos en PP estéril 100 mL</item>
+        <item>Frascos en vidrio 1000 mL boca ancha</item>
+        <item>Frascos en vidrio 500 mL (previamente lavado con ácido)</item>
+        <item>Frascos en vidrio estéril 250 mL</item>
+        <item>Gel antibacterial</item>
+        <item>Geles de refrigeración</item>
+        <item>Linterna</item>
+        <item>Machete</item>
+        <item>Manila</item>
+        <item>Mesa Rimax</item>
+        <item>Nevera de transporte </item>
+        <item>Pala</item>
+        <item>pH-tester</item>
+        <item>Pilas para cronómetro</item>
+        <item>Pipetas plásticas</item>
+        <item>Planillero</item>
+        <item>Probeta plástica 50 mL</item>
+        <item>Probeta plástica 100 mL</item>
+        <item>Probeta plástica 1000 mL</item>
+        <item>Probeta plástica 2000 mL</item>
+        <item>Regleta</item>
+        <item>Resaltadores </item>
+        <item>Sharpie</item>
+        <item>Silla plegable</item>
+        <item>Solución Buffer calibración equipo</item>
+        <item>Solución Buffer verificación equipo</item>
+        <item>Solución Almacenamiento para Electrodo</item>
+        <item>Solución standard cero para verificación equipo oxímetro</item>
+        <item>Sombrilla</item>
+        <item>Soporte para Conos Imhoff</item>
+        <item>Soporte para Equipo de campo</item>
+        <item>Sticker para rotulación de muestras</item>
+        <item>Termo para bebidas calientes</item>
+        <item>Termómetro</item>
+        <item>Toallas de papel</item>
+        <item>Trazador</item>
+        <item>Vara de agitación</item>
+        <item>Vaso de precipitado plástico 500 mL</item>
+        <item>Vaso de precipitado vidrio 2000 mL (previamente lavado con ácido)</item>
+        <item>Vaso toma de muestras</item>
+        <item>Otro</item>
+    </string-array>
+
+    <string-array name="lista18" >
+        <item>  </item>
+        <item>Documentos identificación de personal (cédula, carnet institucional, carnet ARL</item>
+        <item>Etiqueta de muestreo (VT-INA-F-148)</item>
+        <item>Hoja de Seguridad de Soluciones de preservación </item>
+        <item>Instructivo para Uso de Equipo Multiparámetro</item>
+        <item>Instructivo para uso Equipo Oxímetro</item>
+        <item>Instructivo para Verificación de Equipo Multiparámetro </item>
+        <item>Instructivo para Verificación Equipo Oxímetro</item>
+        <item>Lista contactos en caso de emergencia</item>
+        <item>Plan de Muestreo (VT-INA-F-152)</item>
+        <item>Protocolo para toma de muestra</item>
+        <item>Tabla de Requisitos para Preservación y Almacenamiento de Muestras</item>
+        <item>Toma de datos de campo - Método caudal para canales (VT-INA-F-198)</item>
+        <item>Toma de datos de campo - Método caudal volumétrico (VT-INA-F-197</item>
+    </string-array>
+
+    <string-array name="lista19" >
+        <item> </item>
+        <item>Botas de caucho</item>
+        <item>Botas de seguridad</item>
+        <item>Casco</item>
+        <item>Chavo / Gorra</item>
+        <item>Escafandra</item>
+        <item>Gafas de seguridad</item>
+        <item>Guantes de carnaza</item>
+        <item>Guantes de nitrilo</item>
+        <item>Guantes power flex</item>
+        <item>Mascarilla N95</item>
+        <item>Overol</item>
+        <item>Repelente</item>
+        <item>Respirador con filtro para gases y vapores</item>
+        <item>Tapaoidos</item>
+        <item>Traje impermeable</item>
+    </string-array>
+
+    <string-array name="lista20" >
+        <item>  </item>
+        <item>Maletín de Equipos de Campo</item>
+        <item>Caja de Elementos para muestreo</item>
+        <item>Neveras de Transporte de muestras</item>
+        <item>Botiquín</item>
+        <item>Maleta de muestreo</item>
+
+    </string-array>
+
+    <string-array name="lista21" >
+        <item>  </item>
+        <item>Personal</item>
+        <item>Transportadora</item>
+    </string-array>
+
+    <string-array name="lista22" >
+        <item>  </item>
+        <item>Documentos identificación de personal (cédula - carnet institucional - carnet ARL))</item>
+        <item>Etiqueta de muestreo (VT-INA-F-148)</item>
+        <item>Hojas de seguridad de soluciones de preservación</item>
+        <item>Instructivo para uso de equipo multipárametro</item>
+        <item>Instructivo para uso de equipo oxímetro</item>
+        <item>Instructivo para verificación de equipo multipárametro</item>
+        <item>Instructivo para verificación de equipo oxímetro</item>
+        <item>Lista contactos en caso de emergencía</item>
+        <item>Plan de muestreo (VT-INA-F-152)</item>
+        <item>Protocolo para toma de muestra</item>
+        <item>Tabla de requisitos para preservación y almacenamiento de muestras</item>
+        <item>Toma de datos de campo - Método caudal para canales (VT-INA-F-152)</item>
+        <item>Toma de datos de campo - Método caudal volumétrico (VT-INA-F-152)</item>
+    </string-array>
+    <string-array name="lista23">
+        <item></item>
+        <item>Botas de caucho</item>
+        <item>Botas de seguridad</item>
+        <item>Casco</item>
+        <item>Chavo / Gorra</item>
+        <item>Escafandra</item>
+        <item>Gafas de seguridad</item>
+        <item>Guantes de camaza</item>
+        <item>Guantes de nítrilo</item>
+        <item>Guantes power flex</item>
+        <item>Mascarilla N95</item>
+        <item>Overol</item>
+        <item>Repelente</item>
+        <item>Respirador con filtro para gases y vapores</item>
+        <item>Tapaoidos</item>
+        <item>Traje impermeable</item>
+    </string-array>
+    <string-array name="lista24">
+        <item></item>
+        <item>Equipo etiqueta</item>
+        <item>Equipo 1</item>
+        <item>Equipo 2</item>
+        <item>Equipo 3</item>
+        <item>Equipo 4</item>
+        <item>Equipo 5</item>
+        <item>Equipo 6</item>
+        <item>Equipo 7</item>
+        <item>Equipo 8</item>
+        <item>Equipo 9</item>
+        <item>Equipo 10</item>
+    </string-array>
+
+
+</resources>

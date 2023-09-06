@@ -1,0 +1,1643 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".TableThreeFormatVisitActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_s"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_s"
+            android:layout_marginBottom="@dimen/margin_s"
+            android:background="@color/black"
+            android:gravity="center"
+            android:text="SISTEMA DE TRATAMIENTO DE AGUAS RESIDUALES"
+            android:textColor="@color/white" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:background="@drawable/border"
+                android:weightSum="8">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:background="@drawable/border"
+                    android:text="Descripción" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:background="@drawable/border"
+                    android:text="Salida 1" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:background="@drawable/border"
+                    android:text="Salida 2" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:background="@drawable/border"
+                    android:text="Salida 3" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:background="@drawable/border"
+                    android:text="Salida 4" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:background="@drawable/border"
+                    android:text="Salida 5" />
+
+            </TableRow>
+
+            <TableRow
+                android:background="@drawable/border"
+                android:weightSum="8">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:weightSum="4"
+                    android:orientation="horizontal"
+                    android:background="@drawable/border">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:textSize="@dimen/font_small"
+                        android:text="Pretratamiento" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2.5"
+                        android:weightSum="5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="2dp"
+                            android:textSize="@dimen/font_small"
+                            android:background="@drawable/border"
+                            android:text="Rejillas" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="2dp"
+                            android:textSize="@dimen/font_small"
+                            android:background="@drawable/border"
+                            android:text="Trampa de grasas" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="1dp"
+                            android:textSize="@dimen/font_small"
+                            android:background="@drawable/border"
+                            android:text="Desarenador" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="2dp"
+                            android:textSize="@dimen/font_small"
+                            android:background="@drawable/border"
+                            android:text="Tanque Ecualización" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/border"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:padding="2dp"
+                                android:textSize="@dimen/font_small"
+                                android:text="Otro, Cual" />
+
+                            <EditText
+                                android:id="@+id/edit_text_columna1_fila5_tabla3_visitas13"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:weightSum="5"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/edit_text_columna2_fila1_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border"
+                        android:gravity="center"
+                        android:padding="2dp" />
+
+                    <EditText
+                        android:id="@+id/edit_text_columna2_fila2_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+                    <EditText
+                        android:id="@+id/edit_text_columna2_fila3_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+
+                    <EditText
+                        android:id="@+id/edit_text_columna2_fila4_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border"
+                        android:gravity="center"
+                        android:padding="2dp" />
+
+                    <EditText
+                        android:id="@+id/edit_text_columna2_fila5_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:weightSum="5"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/edit_text_columna3_fila1_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+                    <EditText
+                        android:id="@+id/edit_text_columna3_fila2_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+                    <EditText
+                        android:id="@+id/edit_text_columna3_fila3_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+
+                    <EditText
+                        android:id="@+id/edit_text_columna3_fila4_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border"
+                        android:gravity="center"
+                        android:padding="2dp" />
+
+                    <EditText
+                        android:id="@+id/edit_text_columna3_fila5_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border"
+                        android:gravity="center"
+                        android:padding="2dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:weightSum="5"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/edit_text_columna4_fila1_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+                    <EditText
+                        android:id="@+id/edit_text_columna4_fila2_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+                    <EditText
+                        android:id="@+id/edit_text_columna4_fila3_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+                    <EditText
+                        android:id="@+id/edit_text_columna4_fila4_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+
+                    <EditText
+                        android:id="@+id/edit_text_columna4_fila5_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:weightSum="5"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/edit_text_columna5_fila1_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+                    <EditText
+                        android:id="@+id/edit_text_columna5_fila2_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+
+                    <EditText
+                        android:id="@+id/edit_text_columna5_fila3_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border"
+                        android:gravity="center"
+                        android:padding="2dp" />
+                    <EditText
+                        android:id="@+id/edit_text_columna5_fila4_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+
+                    <EditText
+                        android:id="@+id/edit_text_columna5_fila5_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:weightSum="5"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/edit_text_columna6_fila1_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+                    <EditText
+                        android:id="@+id/edit_text_columna6_fila2_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+                    <EditText
+                        android:id="@+id/edit_text_columna6_fila3_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+                    <EditText
+                        android:id="@+id/edit_text_columna6_fila4_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+
+                    <EditText
+                        android:id="@+id/edit_text_columna6_fila5_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:background="@drawable/border"
+                android:weightSum="8">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:weightSum="4"
+                    android:orientation="horizontal"
+                    android:background="@drawable/border">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:textSize="@dimen/font_small"
+                        android:text="Tratamiento Primario" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2.5"
+                        android:weightSum="4"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="2dp"
+                            android:textSize="@dimen/font_small"
+                            android:background="@drawable/border"
+                            android:text="Coagulación" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="1dp"
+                            android:textSize="@dimen/font_small"
+                            android:background="@drawable/border"
+                            android:text="Sedimentación" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="2dp"
+                            android:textSize="@dimen/font_small"
+                            android:background="@drawable/border"
+                            android:text="Precipitación" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/border"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:padding="2dp"
+                                android:textSize="@dimen/font_small"
+                                android:text="Otro, Cual" />
+
+                            <EditText
+                                android:id="@+id/edit_text_columna1_fila9_tabla3_visitas13"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:layout_weight="1"/>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:weightSum="4"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/edit_text_columna2_fila6_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+                    <EditText
+                        android:id="@+id/edit_text_columna2_fila7_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+                    <EditText
+                        android:id="@+id/edit_text_columna2_fila8_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+
+                    <EditText
+                        android:id="@+id/edit_text_columna2_fila9_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:weightSum="4"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/edit_text_columna3_fila6_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+                    <EditText
+                        android:id="@+id/edit_text_columna3_fila7_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+                    <EditText
+                        android:id="@+id/edit_text_columna3_fila8_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+
+                    <EditText
+                        android:id="@+id/edit_text_columna3_fila9_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:weightSum="4"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/edit_text_columna4_fila6_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+                    <EditText
+                        android:id="@+id/edit_text_columna4_fila7_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+                    <EditText
+                        android:id="@+id/edit_text_columna4_fila8_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+
+                    <EditText
+                        android:id="@+id/edit_text_columna4_fila9_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:weightSum="4"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/edit_text_columna5_fila6_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+                    <EditText
+                        android:id="@+id/edit_text_columna5_fila7_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+                    <EditText
+                        android:id="@+id/edit_text_columna5_fila8_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+
+                    <EditText
+                        android:id="@+id/edit_text_columna5_fila9_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:weightSum="4"
+                    android:orientation="vertical">
+
+
+                    <EditText
+                        android:id="@+id/edit_text_columna6_fila6_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+                    <EditText
+                        android:id="@+id/edit_text_columna6_fila7_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+                    <EditText
+                        android:id="@+id/edit_text_columna6_fila8_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+
+                    <EditText
+                        android:id="@+id/edit_text_columna6_fila9_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:background="@drawable/border"
+                android:weightSum="8">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:weightSum="4"
+                    android:orientation="horizontal"
+                    android:background="@drawable/border">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:textSize="@dimen/font_small"
+                        android:text="Tratamiento secundario" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2.5"
+                        android:weightSum="7"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="2dp"
+                            android:textSize="@dimen/font_small"
+                            android:background="@drawable/border"
+                            android:text="Lodos Activados" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="2dp"
+                            android:textSize="@dimen/font_small"
+                            android:background="@drawable/border"
+                            android:text="Lagunas" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="2dp"
+                            android:textSize="@dimen/font_small"
+                            android:background="@drawable/border"
+                            android:text="Filtros" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="2dp"
+                            android:textSize="@dimen/font_small"
+                            android:background="@drawable/border"
+                            android:text="Filtro percolador" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="1dp"
+                            android:textSize="@dimen/font_small"
+                            android:background="@drawable/border"
+                            android:text="DAF" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="2dp"
+                            android:textSize="@dimen/font_small"
+                            android:background="@drawable/border"
+                            android:text="UASB" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/border"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:padding="2dp"
+                                android:textSize="@dimen/font_small"
+                                android:text="Otro, Cual" />
+
+                            <EditText
+                                android:id="@+id/edit_text_columna1_fila16_tabla3_visitas13"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:layout_weight="1"/>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:weightSum="7"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/edit_text_columna2_fila10_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+                    <EditText
+                        android:id="@+id/edit_text_columna2_fila11_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+                    <EditText
+                        android:id="@+id/edit_text_columna2_fila12_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+                    <EditText
+                        android:id="@+id/edit_text_columna2_fila13_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+
+                    <EditText
+                        android:id="@+id/edit_text_columna2_fila14_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border"
+                        android:gravity="center"
+                        android:padding="2dp" />
+
+                    <EditText
+                        android:id="@+id/edit_text_columna2_fila15_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+
+                    <EditText
+                        android:id="@+id/edit_text_columna2_fila16_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:weightSum="7"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/edit_text_columna3_fila10_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+                    <EditText
+                        android:id="@+id/edit_text_columna3_fila11_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+                    <EditText
+                        android:id="@+id/edit_text_columna3_fila12_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+                    <EditText
+                        android:id="@+id/edit_text_columna3_fila13_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+                    <EditText
+                        android:id="@+id/edit_text_columna3_fila14_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+
+                    <EditText
+                        android:id="@+id/edit_text_columna3_fila15_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border"
+                        android:gravity="center"
+                        android:padding="2dp" />
+
+                    <EditText
+                        android:id="@+id/edit_text_columna3_fila16_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:weightSum="7"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/edit_text_columna4_fila10_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+                    <EditText
+                        android:id="@+id/edit_text_columna4_fila11_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+                    <EditText
+                        android:id="@+id/edit_text_columna4_fila12_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+                    <EditText
+                        android:id="@+id/edit_text_columna4_fila13_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+                    <EditText
+                        android:id="@+id/edit_text_columna4_fila14_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+                    <EditText
+                        android:id="@+id/edit_text_columna4_fila15_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+
+                    <EditText
+                        android:id="@+id/edit_text_columna4_fila16_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:weightSum="7"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/edit_text_columna5_fila10_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+                    <EditText
+                        android:id="@+id/edit_text_columna5_fila11_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+                    <EditText
+                        android:id="@+id/edit_text_columna5_fila12_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+                    <EditText
+                        android:id="@+id/edit_text_columna5_fila13_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+                    <EditText
+                        android:id="@+id/edit_text_columna5_fila14_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+                    <EditText
+                        android:id="@+id/edit_text_columna5_fila15_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+
+                    <EditText
+                        android:id="@+id/edit_text_columna5_fila16_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:weightSum="7"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/edit_text_columna6_fila10_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+                    <EditText
+                        android:id="@+id/edit_text_columna6_fila11_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+                    <EditText
+                        android:id="@+id/edit_text_columna6_fila12_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+                    <EditText
+                        android:id="@+id/edit_text_columna6_fila13_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+                    <EditText
+                        android:id="@+id/edit_text_columna6_fila14_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+                    <EditText
+                        android:id="@+id/edit_text_columna6_fila15_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+
+                    <EditText
+                        android:id="@+id/edit_text_columna6_fila16_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:background="@drawable/border"
+                android:weightSum="8">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:weightSum="4"
+                    android:orientation="horizontal"
+                    android:background="@drawable/border">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:textSize="@dimen/font_small"
+                        android:text="Tratamiento terciario" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2.5"
+                        android:weightSum="4"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="2dp"
+                            android:textSize="@dimen/font_small"
+                            android:background="@drawable/border"
+                            android:text="Ozonificación" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="1dp"
+                            android:textSize="@dimen/font_small"
+                            android:background="@drawable/border"
+                            android:text="Osmosis inversa" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="2dp"
+                            android:textSize="@dimen/font_small"
+                            android:background="@drawable/border"
+                            android:text="Cloracion" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/border"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:padding="2dp"
+                                android:textSize="@dimen/font_small"
+                                android:text="Otro, Cual" />
+
+                            <EditText
+                                android:id="@+id/edit_text_columna1_fila20_tabla3_visitas13"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:layout_weight="1"/>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:weightSum="4"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/edit_text_columna2_fila17_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+                    <EditText
+                        android:id="@+id/edit_text_columna2_fila18_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+                    <EditText
+                        android:id="@+id/edit_text_columna2_fila19_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+
+                    <EditText
+                        android:id="@+id/edit_text_columna2_fila20_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:weightSum="4"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/edit_text_columna3_fila17_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+                    <EditText
+                        android:id="@+id/edit_text_columna3_fila18_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+                    <EditText
+                        android:id="@+id/edit_text_columna3_fila19_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+
+                    <EditText
+                        android:id="@+id/edit_text_columna3_fila20_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:weightSum="4"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/edit_text_columna4_fila17_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+                    <EditText
+                        android:id="@+id/edit_text_columna4_fila18_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+                    <EditText
+                        android:id="@+id/edit_text_columna4_fila19_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+
+                    <EditText
+                        android:id="@+id/edit_text_columna4_fila20_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:weightSum="4"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/edit_text_columna5_fila17_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+                    <EditText
+                        android:id="@+id/edit_text_columna5_fila18_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+                    <EditText
+                        android:id="@+id/edit_text_columna5_fila19_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+
+                    <EditText
+                        android:id="@+id/edit_text_columna5_fila20_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:weightSum="4"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/edit_text_columna6_fila17_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+                    <EditText
+                        android:id="@+id/edit_text_columna6_fila18_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+                    <EditText
+                        android:id="@+id/edit_text_columna6_fila19_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+
+                    <EditText
+                        android:id="@+id/edit_text_columna6_fila20_tabla3_visitas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border" />
+
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:background="@drawable/border"
+                android:weightSum="8">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:weightSum="4"
+                    android:orientation="horizontal"
+                    android:background="@drawable/border">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:textSize="@dimen/font_small"
+                        android:text="Metodo aforo" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2.5"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:textSize="@dimen/font_small"
+                        android:background="@drawable/border"
+                        android:text="Volumétrico, Velocidad, Vertedero, Canaleta." />
+
+                </LinearLayout>
+
+
+                <EditText
+                    android:id="@+id/edit_text_columna2_fila21_tabla3_visitas13"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:background="@drawable/border" />
+
+
+                <EditText
+                    android:id="@+id/edit_text_columna3_fila21_tabla3_visitas13"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:background="@drawable/border" />
+                <EditText
+                    android:id="@+id/edit_text_columna4_fila21_tabla3_visitas13"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:background="@drawable/border" />
+                <EditText
+                    android:id="@+id/edit_text_columna5_fila21_tabla3_visitas13"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:background="@drawable/border" />
+                <EditText
+                    android:id="@+id/edit_text_columna6_fila21_tabla3_visitas13"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:background="@drawable/border" />
+
+
+
+
+
+            </TableRow>
+
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="Código asignado:"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/edit_text_codigo_visitas_tabla3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:backgroundTint="@color/colorRed"
+                android:textColor="@color/black">
+
+            </EditText>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/button_save_tabla3_visit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="99dp"
+                android:layout_marginLeft="99dp"
+                android:layout_marginBottom="@dimen/margin_s"
+                android:layout_marginTop="@dimen/margin_s"
+                android:backgroundTint="@color/black"
+                android:padding="@dimen/padding_button"
+                android:text="Guardar"
+                android:textColor="@color/white"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

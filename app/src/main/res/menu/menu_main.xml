@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+
+
+
+    <item android:id="@+id/action_salir"
+        android:title="Cerrar Sesión"
+        app:showAsAction="never"
+        android:icon="@drawable/ic_action_fin" />
+    <item android:id="@+id/action_team"
+        android:title="Cambiar equipo"
+        app:showAsAction="never"
+        android:icon="@drawable/ic_action_fin" />
+    <item android:id="@+id/action_password"
+        android:title="Cambiar contraseña"
+        app:showAsAction="never"
+        android:icon="@drawable/ic_action_fin" />
+
+</menu>

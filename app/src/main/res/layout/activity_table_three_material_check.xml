@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".TableThreeMaterialCheckActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_s"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_s"
+                android:layout_marginBottom="@dimen/margin_s"
+                android:background="@color/black"
+                android:gravity="center"
+                android:text="FORMATOS PARA REGISTRO DE DATOS DE CAMPO E INSTRUCTIVOS"
+                android:textColor="@color/white" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:background="@drawable/border"
+                    android:weightSum="7">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border"
+                        android:text="ÍTEM A VERIFICAR" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border"
+                        android:textSize="@dimen/font_small"
+                        android:text="SE REQUIERE" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border"
+                        android:textSize="@dimen/font_small"
+                        android:text="REVISIÓN SALIDA" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border"
+                        android:textSize="@dimen/font_small"
+                        android:text="REVISIÓN EN CAMPO" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:background="@drawable/border"
+                        android:textSize="@dimen/font_small"
+                        android:text="REVISIÓN  LLEGADA" />
+
+
+
+                </TableRow>
+
+                <TableRow
+                    android:background="@drawable/border"
+                    android:weightSum="7">
+
+                    <Spinner
+                        android:id="@+id/spinner_item_table_three_material_check"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:entries="@array/lista22"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:spinnerMode="dialog" />
+                    <Spinner
+                        android:id="@+id/spinner1_fila1_tabla4_material"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:entries="@array/lista15"
+                        android:minHeight="2dp"
+                        android:spinnerMode="dialog"
+                        android:background="@drawable/border"/>
+
+
+                    <Spinner
+                        android:id="@+id/spinner2_fila1_tabla4_material"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:entries="@array/lista16"
+                        android:minHeight="2dp"
+                        android:spinnerMode="dialog"
+                        android:background="@drawable/border"/>
+                    <Spinner
+                        android:id="@+id/spinner3_fila1_tabla4_material"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:entries="@array/lista16"
+                        android:minHeight="2dp"
+                        android:spinnerMode="dialog"
+                        android:background="@drawable/border"/>
+
+                    <Spinner
+                        android:id="@+id/spinner4_fila1_tabla4_material"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:entries="@array/lista16"
+                        android:minHeight="2dp"
+                        android:spinnerMode="dialog"
+                        android:background="@drawable/border"/>
+
+                </TableRow>
+
+
+            </TableLayout>
+
+            <Button
+                android:id="@+id/button_save_material_three_db"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="99dp"
+                android:layout_marginLeft="99dp"
+                android:layout_marginBottom="@dimen/margin_s"
+                android:layout_marginTop="@dimen/margin_s"
+                android:backgroundTint="#051C57"
+                android:padding="@dimen/padding_button"
+                android:text="Guardar este regístro en la base de datos"
+                android:textColor="@color/white"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_material_check_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/button_delete_material_three_db"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="99dp"
+                android:layout_marginLeft="99dp"
+                android:layout_marginBottom="@dimen/margin_s"
+                android:layout_marginTop="@dimen/margin_s"
+                android:backgroundTint="@color/colorPrimary"
+                android:padding="@dimen/padding_button"
+                android:text="Vaciar regístros"
+                android:textColor="@color/white"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="Código asignado:"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/edit_text_codigo_chequeo_tabla3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:backgroundTint="@color/colorRed"
+                    android:textColor="@color/black">
+
+                </EditText>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/button_save_material_tabla3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="99dp"
+                    android:layout_marginLeft="99dp"
+                    android:layout_marginBottom="@dimen/margin_s"
+                    android:layout_marginTop="@dimen/margin_s"
+                    android:backgroundTint="@color/black"
+                    android:padding="@dimen/padding_button"
+                    android:text="Guardar"
+                    android:textColor="@color/white"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottomSheetContainerFirma"
+    android:orientation="vertical"
+    android:background="@drawable/drawable_sheet_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_action_close"
+        android:layout_marginBottom="30dp"/>
+
+
+    <TextView
+        android:id="@+id/description_action"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Por favor, introduce el código de la firma que deseas subir."
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/edit_text_codigo_send_firma"
+        android:layout_width="250dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorRed"
+        android:textColor="@color/black" />
+    <Button
+        android:id="@+id/action_send"
+        android:layout_width="350dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2196F3"
+        android:text="Enviar"
+        android:textColor="@color/white"
+        android:layout_marginBottom="100dp"
+        />
+
+</LinearLayout>

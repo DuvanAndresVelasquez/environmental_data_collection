@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MaterialCheckActivity" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/colorGray">
+
+            <LinearLayout
+                android:id="@+id/title_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_s"
+                android:layout_marginRight="@dimen/margin_s"
+                android:layout_marginTop="@dimen/margin_l"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/form_layout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed">
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginEnd="@dimen/margin_s"
+                    android:layout_marginRight="@dimen/margin_s"
+                    app:srcCompat="@drawable/logo_small" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="LABORATORIO DE AGUAS LISTA CHEQUEO MATERIALES PARA MUESTREO"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_title"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/form_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_m"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title_layout">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:text="Código asignado:"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/edit_text_codigo_chequeo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:backgroundTint="@color/colorRed"
+                        android:textColor="@color/black">
+
+                    </EditText>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:text="N°:"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/edit_text_numero_chequeo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:backgroundTint="@color/colorRed"
+                        android:textColor="@color/black">
+
+                    </EditText>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1.3"
+                        android:gravity="center"
+                        android:text="FECHA"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.7"
+                        android:gravity="center"
+                        android:text="RESPONSABLE"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.3"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1.1"
+                            android:text="Elaboracion"
+                            android:textColor="@color/black" />
+
+                        <EditText
+                            android:id="@+id/edit_text_elaboracion_material"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/margin_s"
+                            android:layout_weight="1.9"
+                            android:focusable="false"
+                            android:clickable="true"
+                            android:maxLines="1"
+                            android:backgroundTint="@color/colorRed"
+                            android:textColor="@color/black">
+
+                        </EditText>
+
+
+                    </LinearLayout>
+
+
+                    <EditText
+                        android:id="@+id/edit_text_responsable1_material"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:backgroundTint="@color/colorRed"
+                        android:textColor="@color/black">
+
+                    </EditText>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.3"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1.1"
+                            android:text="Revision Salida"
+                            android:textColor="@color/black" />
+
+                        <EditText
+                            android:id="@+id/edit_text_revision_salida_material"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/margin_s"
+                            android:layout_weight="1.9"
+                            android:focusable="false"
+                            android:clickable="true"
+                            android:maxLines="1"
+                            android:backgroundTint="@color/colorRed"
+                            android:textColor="@color/black">
+
+                        </EditText>
+
+
+                    </LinearLayout>
+
+
+                    <EditText
+                        android:id="@+id/edit_text_responsable2_material"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:backgroundTint="@color/colorRed"
+                        android:textColor="@color/black">
+
+                    </EditText>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.3"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1.1"
+                            android:text="Revision llegada"
+                            android:textColor="@color/black" />
+
+                        <EditText
+                            android:id="@+id/edit_text_revision_llegada_material"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/margin_s"
+                            android:layout_weight="1.9"
+                            android:focusable="false"
+                            android:clickable="true"
+                            android:maxLines="1"
+                            android:backgroundTint="@color/colorRed"
+                            android:textColor="@color/black">
+
+                        </EditText>
+
+
+                    </LinearLayout>
+
+
+                    <EditText
+                        android:id="@+id/edit_text_responsable3_material"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:backgroundTint="@color/colorRed"
+                        android:textColor="@color/black">
+
+                    </EditText>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_s"
+                    android:layout_marginBottom="@dimen/margin_s"
+                    android:background="@color/black"
+                    android:gravity="center"
+                    android:text="DATOS DE MUESTREO A REALIZAR"
+                    android:textColor="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.5"
+                        android:text="Cliente:"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/edit_text_cliente_material"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.5"
+                        android:backgroundTint="@color/colorRed"
+                        android:textColor="@color/black">
+
+                    </EditText>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:text="Ciudad:"
+                            android:textColor="@color/black" />
+
+                        <EditText
+                            android:id="@+id/edit_text_ciudad_material"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/margin_s"
+                            android:layout_weight="2"
+                            android:backgroundTint="@color/colorRed"
+                            android:textColor="@color/black">
+
+                        </EditText>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:text="Orden de Servicio  No.:"
+                            android:textColor="@color/black" />
+
+                        <EditText
+                            android:id="@+id/edit_text_orden_material"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:backgroundTint="@color/colorRed"
+                            android:textColor="@color/black">
+
+                        </EditText>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.7"
+                        android:text="No. Puntos de Muestreo:"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/edit_text_numero_puntos_material"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.3"
+                        android:backgroundTint="@color/colorRed"
+                        android:textColor="@color/black">
+
+                    </EditText>
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_s"
+                    android:layout_marginBottom="@dimen/margin_s"
+                    android:background="@color/black"
+                    android:gravity="center"
+                    android:text="PERSONAL REQUERIDO"
+                    android:textColor="@color/white" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.3"
+                        android:text="No"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/edit_text_numero_personal_material"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.2"
+                        android:backgroundTint="@color/colorRed"
+                        android:textColor="@color/black"></EditText>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.7"
+                        android:text="Personal Asignado:"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/edit_text_personal_asignado1_material"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.3"
+                        android:backgroundTint="@color/colorRed"
+                        android:textColor="@color/black">
+
+                    </EditText>
+
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.7"
+                        android:text=""
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/edit_text_personal_asignado2_material"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.3"
+                        android:backgroundTint="@color/colorRed"
+                        android:textColor="@color/black">
+
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.7"
+                        android:text=""
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/edit_text_personal_asignado3_material"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.3"
+                        android:backgroundTint="@color/colorRed"
+                        android:textColor="@color/black">
+
+                    </EditText>
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_s"
+                    android:layout_marginBottom="@dimen/margin_s"
+                    android:background="@color/black"
+                    android:gravity="center"
+                    android:text="MATERIALES Y EQUIPOS REQUERIDOS"
+                    android:textColor="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/table_1_buttonm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_s"
+                        android:layout_marginTop="@dimen/margin_s"
+                        android:backgroundTint="@color/colorRed"
+                        android:padding="@dimen/padding_button"
+                        android:text="Ver Materiales"
+                        android:layout_marginRight="@dimen/margin_s"
+                        android:textColor="@color/white"
+                        />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_s"
+                    android:layout_marginBottom="@dimen/margin_s"
+                    android:background="@color/black"
+                    android:gravity="center"
+                    android:text="MATERIALES Y PRESERVACIÓN DE MUESTRAS"
+                    android:textColor="@color/white" />
+
+
+
+                <Button
+                    android:id="@+id/table_3_buttonm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_s"
+                    android:layout_marginTop="@dimen/margin_s"
+                    android:backgroundTint="@color/colorRed"
+                    android:padding="@dimen/padding_button"
+                    android:text="Ver Materiales"
+                    android:layout_marginRight="@dimen/margin_s"
+                    android:textColor="@color/white" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_s"
+                    android:layout_marginBottom="@dimen/margin_s"
+                    android:background="@color/black"
+                    android:gravity="center"
+                    android:text="FORMATOS PARA REGISTRO DE DATOS DE CAMPO E INSTRUCTIVOS"
+                    android:textColor="@color/white" />
+
+
+                <Button
+                    android:id="@+id/table_4_buttonm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_s"
+                    android:layout_marginRight="@dimen/margin_s"
+                    android:layout_marginBottom="@dimen/margin_s"
+                    android:backgroundTint="@color/colorRed"
+                    android:padding="@dimen/padding_button"
+                    android:text="Formato para registro de datos de campo e instructivos"
+                    android:textColor="@color/white" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_s"
+                    android:layout_marginBottom="@dimen/margin_s"
+                    android:background="@color/black"
+                    android:gravity="center"
+                    android:text="ELEMENTOS DE PROTECCIÓN PERSONAL"
+                    android:textColor="@color/white" />
+
+
+                <Button
+                    android:id="@+id/table_5_buttonm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_s"
+                    android:layout_marginTop="@dimen/margin_s"
+                    android:backgroundTint="@color/colorRed"
+                    android:padding="@dimen/padding_button"
+                    android:text="Ver elementos"
+                    android:layout_marginRight="@dimen/margin_s"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_s"
+                    android:layout_marginBottom="@dimen/margin_s"
+                    android:background="@color/black"
+                    android:gravity="center"
+                    android:text="LISTA CONSOLIDADO EMBALAJE A TRASLADAR"
+                    android:textColor="@color/white" />
+
+
+                <Button
+                    android:id="@+id/table_6_buttonm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_s"
+                    android:layout_marginTop="@dimen/margin_s"
+                    android:backgroundTint="@color/colorRed"
+                    android:padding="@dimen/padding_button"
+                    android:text="Ver embalaje"
+                    android:layout_marginRight="@dimen/margin_s"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_s"
+                    android:layout_marginBottom="@dimen/margin_s"
+                    android:background="@color/black"
+                    android:gravity="center"
+                    android:text="OBSERVACIONES"
+                    android:textColor="@color/white" />
+
+                <EditText
+                    android:id="@+id/edit_text_observaciones_material"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorRed"
+                    android:textColor="@color/black">
+
+                </EditText>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.7"
+                        android:text="VoBo. Jefe de Laboratorio de Aguas"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/edit_text_jefe_lab_material"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.3"
+                        android:backgroundTint="@color/colorRed"
+                        android:textColor="@color/black">
+
+                    </EditText>
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/button_save_material"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="99dp"
+                    android:layout_marginLeft="99dp"
+                    android:layout_marginBottom="@dimen/margin_s"
+                    android:layout_marginTop="@dimen/margin_s"
+                    android:backgroundTint="@color/black"
+                    android:padding="@dimen/padding_button"
+                    android:text="Guardar"
+                    android:textColor="@color/white"
+                    />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>

@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".TableTwoFormatVisitActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_s"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_s"
+            android:layout_marginBottom="@dimen/margin_s"
+            android:background="@color/black"
+            android:gravity="center"
+            android:text="INFORMACION SOBRE VERTIMIENTOS (SALIDAS)"
+            android:textColor="@color/white" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:background="@drawable/border"
+                android:weightSum="8">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:background="@drawable/border"
+                    android:text="Descripción" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:background="@drawable/border"
+                    android:text="Salida 1" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:background="@drawable/border"
+                    android:text="Salida 2" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:background="@drawable/border"
+                    android:text="Salida 3" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:background="@drawable/border"
+                    android:text="Salida 4" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:background="@drawable/border"
+                    android:text="Salida 5" />
+
+            </TableRow>
+
+            <TableRow
+                android:background="@drawable/border"
+                android:weightSum="8">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:background="@drawable/border"
+                    android:textSize="@dimen/font_small"
+                    android:text="Tipó de vertimiento : Periódico, regular, periódico irregular, continuo e irregular" />
+
+                <EditText
+                    android:id="@+id/edit_text_columna2_fila1_tabla2_visitas12"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:background="@drawable/border" />
+
+                <EditText
+                    android:id="@+id/edit_text_columna3_fila1_tabla2_visitas12"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:background="@drawable/border" />
+
+                <EditText
+                    android:id="@+id/edit_text_columna4_fila1_tabla2_visitas12"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:background="@drawable/border" />
+
+                <EditText
+                    android:id="@+id/edit_text_columna5_fila1_tabla2_visitas12"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center"
+                    android:padding="2dp" />
+
+                <EditText
+                    android:id="@+id/edit_text_columna6_fila1_tabla2_visitas12"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:background="@drawable/border" />
+
+            </TableRow>
+
+            <TableRow
+                android:background="@drawable/border"
+                android:weightSum="8">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:weightSum="3"
+                    android:background="@drawable/border"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+
+                        android:textSize="@dimen/font_small"
+                        android:text="Periodicidad" />
+
+                    <EditText
+                        android:id="@+id/edit_text_columna1_fila2_tabla2_visitas12"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        />
+
+                </LinearLayout>
+
+
+
+                <EditText
+                    android:id="@+id/edit_text_columna2_fila2_tabla2_visitas12"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:background="@drawable/border" />
+
+                <EditText
+                    android:id="@+id/edit_text_columna3_fila2_tabla2_visitas12"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:background="@drawable/border" />
+
+                <EditText
+                    android:id="@+id/edit_text_columna4_fila2_tabla2_visitas12"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:background="@drawable/border" />
+
+                <EditText
+                    android:id="@+id/edit_text_columna5_fila2_tabla2_visitas12"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:background="@drawable/border" />
+
+                <EditText
+                    android:id="@+id/edit_text_columna6_fila2_tabla2_visitas12"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:background="@drawable/border" />
+
+            </TableRow>
+
+            <TableRow
+                android:background="@drawable/border"
+                android:weightSum="8">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:weightSum="3"
+                    android:background="@drawable/border"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+
+                        android:textSize="@dimen/font_small"
+                        android:text="Tiempo del vertimiento Horas/Dia:" />
+
+                    <EditText
+                        android:id="@+id/edit_text_columna1_fila3_tabla2_visitas12"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:padding="2dp" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/edit_text_columna2_fila3_tabla2_visitas12"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:background="@drawable/border" />
+
+                <EditText
+                    android:id="@+id/edit_text_columna3_fila3_tabla2_visitas12"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:background="@drawable/border" />
+
+                <EditText
+                    android:id="@+id/edit_text_columna4_fila3_tabla2_visitas12"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:background="@drawable/border" />
+
+                <EditText
+                    android:id="@+id/edit_text_columna5_fila3_tabla2_visitas12"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:background="@drawable/border" />
+
+                <EditText
+                    android:id="@+id/edit_text_columna6_fila3_tabla2_visitas12"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:background="@drawable/border" />
+
+            </TableRow>
+
+            <TableRow
+                android:background="@drawable/border"
+                android:weightSum="8">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:weightSum="3"
+                    android:background="@drawable/border"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dp"
+
+                        android:textSize="@dimen/font_small"
+                        android:text="Caudal de salida:" />
+
+                    <EditText
+                        android:id="@+id/edit_text_columna1_fila4_tabla2_visitas12"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:padding="2dp" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/edit_text_columna2_fila4_tabla2_visitas12"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:background="@drawable/border" />
+
+                <EditText
+                    android:id="@+id/edit_text_columna3_fila4_tabla2_visitas12"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:background="@drawable/border" />
+
+                <EditText
+                    android:id="@+id/edit_text_columna4_fila4_tabla2_visitas12"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:background="@drawable/border" />
+
+                <EditText
+                    android:id="@+id/edit_text_columna5_fila4_tabla2_visitas12"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:background="@drawable/border" />
+
+                <EditText
+                    android:id="@+id/edit_text_columna6_fila4_tabla2_visitas12"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:background="@drawable/border" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="Código asignado:"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/edit_text_codigo_visitas_tabla2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:backgroundTint="@color/colorRed"
+                android:textColor="@color/black">
+
+            </EditText>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/button_save_tabla2_visit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="99dp"
+                android:layout_marginLeft="99dp"
+                android:layout_marginBottom="@dimen/margin_s"
+                android:layout_marginTop="@dimen/margin_s"
+                android:backgroundTint="@color/black"
+                android:padding="@dimen/padding_button"
+                android:text="Guardar"
+                android:textColor="@color/white"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
